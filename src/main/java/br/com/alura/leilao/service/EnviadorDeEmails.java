@@ -14,7 +14,12 @@ public class EnviadorDeEmails {
 		Usuario vencedor = lanceVencedor.getUsuario();
 		Leilao leilao = lanceVencedor.getLeilao();
 		
-		String email = String.format("Parabens {}! Voce venceu o leilao {} com o lance de R${}", vencedor.getNome(), leilao.getNome(), lanceVencedor.getValor());
+		String email = String.format(
+				"Parabens {}! Voce venceu o leilao {} com o lance de R${}",
+				vencedor.getNome(),
+				leilao.getNome(),
+				lanceVencedor.getValor()
+		);
 
 		System.out.println(email);
 	}

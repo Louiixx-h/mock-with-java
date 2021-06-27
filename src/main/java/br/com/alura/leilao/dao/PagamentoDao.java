@@ -20,5 +20,4 @@ public class PagamentoDao {
 	public void salvar(Pagamento pagamento) {
 		em.persist(pagamento);
 	}
-
 }
